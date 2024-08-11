@@ -82,9 +82,7 @@ const API_KEY = "your_api_key_here";
 
 Feel free to fork the repository and submit pull requests. For major changes or feature requests, please open an issue.
 
-## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Contact
 
