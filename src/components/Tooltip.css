@@ -1,0 +1,107 @@
+/* Tooltip.css */
+.tooltip-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.info-icon {
+  background: rgb(0, 234, 255); /* Light blue background */
+  color: rgb(5, 17, 54); /* Dark blue text color */
+  font-size: 13px;
+  font-weight: bold;
+  width: 15px; /* Width of the circle */
+  height: 15px; /* Height of the circle */
+  border-radius: 50%; /* Makes the icon circular */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  box-shadow: 0 0 8px rgba(6, 64, 255, 0.583); /* Blue shadow matching the app */
+  transition: all 0.1s ease; /* Smooth transition for hover effect */
+  cursor: pointer; /* Pointer cursor for better UX */
+}
+
+.info-icon:hover {
+  background: rgb(5, 17, 54); /* Dark blue background on hover */
+  color: rgb(0, 234, 255); /* Light blue text color on hover */
+  box-shadow: 0 0 12px rgba(6, 64, 255, 0.8); /* Enhanced shadow effect */
+  transform: scale(1.1); /* Slightly enlarge the icon on hover */
+}
+
+.tooltip-text {
+  display: block;
+  background: rgba(5, 17, 54, 0.9); /* Dark blue background with slight transparency */
+  color: rgb(0, 234, 255); /* Light blue text color */
+  padding: 15px;
+  border-radius: 4px;
+  border: 2px solid rgb(0, 234, 255); /* Light blue border */
+  box-shadow: 0 0px 32px 2px rgba(6, 64, 255, 0.583); /* Blue shadow matching the app */
+  position: absolute;
+  top: 100%;
+  left: 0;
+  transform: translateY(8px);
+  white-space: pre-line;
+  font-size: 14px;
+  max-width: 350px; /* Responsive width */
+  width: 100%; /* Full width for smaller screens */
+  z-index: 10; /* Ensure it appears above other elements */
+}
+
+.tooltip-close {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  color: antiquewhite;
+  padding: 2px;
+
+  font-size: 20px;
+  cursor: pointer;
+
+}
+
+.tooltip-text h4 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 16px;
+  color: rgb(255, 255, 255); /* Light blue color for section headers */
+  text-align: center; /* Center-align the heading */
+}
+
+.tooltip-text p, .tooltip-text ul {
+  margin: 0;
+}
+
+.tooltip-text ul {
+  list-style-type: disc; /* Adds bullet points */
+  padding-left: 20px; /* Adds padding to the left of the bullets */
+}
+
+.tooltip-text li {
+  margin-bottom: 8px; /* Space between list items */
+}
+
+.tooltip-text a {
+  color: rgb(0, 234, 255); /* Light blue link color */
+  text-decoration: none; /* Remove underline by default */
+  border-bottom: 2px solid rgb(0, 234, 255); /* Underline with a solid line */
+  transition: all 0.1s ease; /* Smooth transition for hover effect */
+}
+
+.tooltip-text a:hover {
+  color: #fdfefb; /* Change color on hover for better contrast */
+  border-bottom: 2px solid #52f616; /* Change underline color on hover */
+ 
+}
+
+@media (max-width: 600px) {
+  .tooltip-text {
+    max-width: 200px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .tooltip-text {
+    max-width: 350px;
+  }
+}
