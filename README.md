@@ -1,5 +1,5 @@
 # Currency Converter App
-
+A React-based application for converting currencies with real-time exchange rates. Features dynamic currency selection with search and filter options, responsive design, and a built-in tooltip for additional information. Quickly format input values and get instant conversion results.
 ## Overview
 
 The Currency Converter App is a React-based application that allows users to easily convert different currencies using real-time exchange rates. It features a user-friendly interface with dynamic currency selection and a built-in tooltip for additional information.
